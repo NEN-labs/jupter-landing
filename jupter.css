@@ -57,6 +57,7 @@
    position: absolute;
    width: 714px;
 height: 146px;
+z-index: 2;
   }
   
   /* Hero Section */
@@ -225,6 +226,8 @@ height: 146px;
    display: flex;
    flex-direction: column;
    gap: 50px;
+   position: relative;
+   z-index: 4;
   }
 
   .section-divider {
@@ -237,6 +240,14 @@ height: 146px;
   .statistics {
    max-width: 1200px;
    margin: 0 auto;
+   position: relative;
+  }
+
+  .statistics .section-light {
+   left: 50%;
+   transform: translate(-50%, 0);
+   bottom: 70px;
+   opacity: 0.6;
   }
   
   .statistics__grid {
@@ -266,6 +277,7 @@ height: 146px;
   
   .stat-card:hover .stat-card__light {
    background: rgb(255, 134, 42);
+   /* bottom: -30px; */
    transition: var(--transition-base);
    filter: blur(80px);
    cursor: auto;
@@ -519,7 +531,7 @@ height: 146px;
 }
 
 .carouselnav:hover {
-   box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.50) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 12px 0px rgba(255, 255, 255, 0.152) inset, 0px 0px 0px 2px #0E0905, 0px 0px 12px 0px rgba(0, 0, 0, 0.25), 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+   box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.50) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 12px 0px rgba(255, 255, 255, 0.09) inset, 0px 0px 0px 2px #0E0905, 0px 0px 12px 0px rgba(0, 0, 0, 0.25), 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
    transform: scale(0.95);
 }
 
@@ -571,86 +583,125 @@ height: 146px;
      max-width: 910px;
      margin: 0 20px;
    }
-   
-   .hero__text-box {
-     padding: 32px;
-   }
   
    .statistics__grid {
      grid-template-columns: repeat(2, 1fr);
    }
   }
-  
-  @media (max-width: 768px) {
-   .hero__actions {
-     flex-direction: column;
-     gap: 16px;
-   }
-  
-   .hero__actions-group {
-     flex-direction: column;
-     width: 100%;
-   }
-  
-   .btn {
-     width: 100%;
-   }
-  
-   .statistics__grid {
-     grid-template-columns: 1fr;
-   }
-  
-   .partners__grid {
-     flex-direction: column;
-     gap: 32px;
-   }
-  
-   .testimonial-card {
-     padding: 24px;
-   }
-  
-   .carousel__nav {
-     display: none;
-   }
-  }
-  
-  @media (max-width: 480px) {
-   .hero__text-box h1 {
-     font-size: 32px;
-   }
-  
-   .hero__text-box p {
-     font-size: 18px;
-   }
-  }
 
 @media (max-width: 1024px) {
-   .testimonials {
-       max-width: 100%;
-       padding: 120px 24px;
+   /* Add overflow hidden to body */
+   main {
+       overflow: hidden; /* Prevents overflow of planet image */
    }
 
-   .testimonial-card {
-       margin: 0 60px;
+   .section-divider {
+      max-width: 800px;
+      width: 100%;
    }
-}
 
-@media (max-width: 768px) {
+   .planet {
+      height: 500px;
+      width: 500px;
+   }
+
+   .hero__text-box {
+      padding: 15px;
+    }
+
+   .hero__text-box h1 {
+      font-size: 28px;
+   }
+
+   .hero {
+      min-height: auto;
+      padding: 10rem 1.5rem 2rem;
+   }
+
+   .hero__text-box p {
+      font-size: 18px;
+   }
+
+   /* Update hero wrapper content */
+   .hero__wrapper__content {
+       width: 100%; /* Remove fixed width */
+       max-width: 900px; /* Set max width */
+   }
+
+   .statistics {
+      padding: 0 1.5rem;
+   }
+
+   .statistics__grid {
+      padding: 0;
+   }
+
+   .stat-card__number {
+      font-size: 28px;
+   }
+
+   .partners__grid {
+      gap: 0;
+   }
+
+   .testimonials-carousel {
+      height: 380px;
+   }
+
    .testimonialstitle {
-       font-size: 48px;
-       margin-bottom: 48px;
+      font-size: 28px;
    }
 
-   .testimonial-card {
-       margin: 0 40px;
+   .testimonials-content {
+      padding: 0 15px;
    }
 
-   .testimonial-cardquote {
-       font-size: 16px;
+   .testimonial-card-wrapper {
+      width: 100%;
    }
 
-   .carousel__nav {
-       width: 32px;
-       height: 32px;
+   .authorinfo {
+      text-align: center;
    }
+
+   .testimonial-cardauthor {
+      flex-direction: column;
+   }
+
+   /* Set font size for h1 and h2 */
+   h1, h2 {
+       font-size: 28px; /* Set font size for h1 and h2 */
+   }
+
+   .testimonials-carousel {
+      gap: 8px;
+   }
+
+   .carouselnav {
+      width: 24px;
+      height: 24px;
+   }
+
+   .hero__actions {
+      flex-direction: column;
+      gap: 16px;
+    }
+   
+    .hero__actions-group {
+      flex-direction: column;
+      width: 100%;
+    }
+   
+    .btn {
+      width: 100%;
+    }
+   
+    .statistics__grid {
+      grid-template-columns: 1fr;
+    }
+   
+    .partners__grid {
+      flex-direction: column;
+    }
+
 }
