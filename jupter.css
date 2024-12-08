@@ -543,9 +543,6 @@ z-index: 2;
    transform: rotate(180deg);
 }
 
-.carouselnav--next {
-}
-
 .carousel__nav span {
    line-height: 1;
 }
