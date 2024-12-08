@@ -34,86 +34,106 @@
                         <div class="hero__actions">
                             <!-- Left-aligned buttons -->
                             <div class="hero__actions-group">
-                                <button type="button" class="btn">Download map</button>
-                                <button type="button" class="btn">Manifesto</button>
-                                <button type="button" class="btn">Learn more</button>
+                                <button type="button" class="btn"><span><img src="./assets/imgs/Linear/Arrows Action/download.svg" /></span>Download map</button>
+                                <button type="button" class="btn"><span><img src="./assets/imgs/Outline/School/book.svg" /></span>Manifesto</button>
+                                <button type="button" class="btn"><span><img src="./assets/imgs/Linear/Business, Statistic/course-up.svg" /></span>Learn more</button>
                             </div>
                             <!-- Right-aligned contact button -->
-                            <button type="button" class="btn btn--contact">Contact us</button>
+                            <button type="button" class="btn btn--contact"><span><img src="./assets/imgs/arrow-right.svg" /></span>Contact us</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-           <!-- Logo -->
-           <div class="logo">
-               <img src="path-to-jupter-logo.svg" alt="Jupter" />
-           </div>
        </section>
 
        <!-- Statistics section -->
        <section class="statistics">
-           <div class="statistics__grid">
-               <div class="stat-card">
-                   <h2 class="stat-card__number">394</h2>
-                   <p class="stat-card__label">Investors in the network</p>
-               </div>
-               <div class="stat-card">
-                   <h2 class="stat-card__number">2,835,077,434</h2>
-                   <p class="stat-card__label">R$ Dry Powder</p>
-               </div>
-               <div class="stat-card">
-                   <h2 class="stat-card__number">11,929,851,443</h2>
-                   <p class="stat-card__label">R$ Assets Under Management (Aum)</p>
-               </div>
-           </div>
-       </section>
-
-       <!-- Partners section -->
-       <section class="partners">
-           <div class="partners__grid">
-               <img src="path-to-jupter-logo.svg" alt="Jupter" class="partner-logo" />
-               <img src="path-to-anjos-logo.svg" alt="anjos.vc2" class="partner-logo" />
-               <img src="path-to-abvcap-logo.svg" alt="abvcap" class="partner-logo" />
-           </div>
+        <div class="statistics-content">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./assets/imgs/jupter-logo.png" alt="Jupter" />
+            </div>
+            <div class="section-divider"></div>
+            <div class="statistics__grid">
+                <div class="stat-card">
+                    <div class="stat-card__number-wrapper">
+                    <h2 class="stat-card__number">394</h2>
+                    </div>
+                    <p class="stat-card__label">Investors in the network</p>
+                    <div class="stat-card__light"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number-wrapper">
+                        <h2 class="stat-card__number">2,835,077,434</h2>
+                    </div>
+                    <p class="stat-card__label">R$ Dry Powder</p>
+                    <div class="stat-card__light"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number-wrapper">
+                    <h2 class="stat-card__number">11,929,851,443</h2>
+                    </div>
+                    <p class="stat-card__label">R$ Assets Under Management (Aum)</p>
+                    <div class="stat-card__light"></div>
+                </div>
+            </div>
+            <div class="partners__grid">
+                <a class="sponsor-link" href="#" target="_blank">
+                    <img src="./assets/imgs/sponsor-01.png" alt="Jupter" class="partner-logo jupter" />
+                </a>
+                <a class="sponsor-link" href="https://www.anjosdobrasil.net/" target="_blank">
+                    <img src="./assets/imgs/sponsor-02.png" alt="anjos.vc2" class="partner-logo" />
+                </a>
+                <a class="sponsor-link" href="https://www.abvcap.com.br/" target="_blank">
+                    <img src="./assets/imgs/sponsor-03.png" alt="abvcap" class="partner-logo" />
+                </a>
+            </div>
+        </div>
        </section>
 
        <!-- Testimonials section -->
        <section class="testimonials">
-        <h2 class="testimonialstitle">Testimonies</h2>
-        <div class="testimonialscarousel">
-            <!-- Carousel arrows - note the position change -->
-            <button class="carouselnav carouselnav--prev" aria-label="Previous testimonial">
-                <span>›</span>
-            </button>
-     
-            <!-- Main testimonial card with centered content -->
-            <div class="testimonial-card">
-                <div class="testimonial-cardcontent">
-                    <!-- Quote with correct alignment -->
-                    <blockquote class="testimonial-cardquote">
-                        "Essential for ecosystem players, both entrepreneurs and investors, to know when and with whom they can count on this arduous journey that is the fundraising process in Brazil"
-                    </blockquote>
-     
-                    <!-- Author info with centered layout -->
-                    <div class="testimonial-cardauthor">
-                        <img 
-                            src="path-to-marcos-buson.jpg" 
-                            alt="Marcos Buson" 
-                            class="authorimage"
-                        />
-                        <div class="authorinfo">
-                            <p class="authorname">Marcos Buson</p>
-                            <p class="authorcompany">HARDS & Moa Capital</p>
+        <div class="testimonials-content">
+            <h2 class="testimonialstitle">Testimonials</h2>
+            <div class="testimonials-carousel">
+                <div class="carouselnav-wrapper">
+                    <button class="carouselnav carouselnav--prev">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 5.83301L17.5 13.9997L10.5 22.1663" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                </div>
+                <div class="testimonial-wrapper-box">
+                    <div class="testimonial-card-wrapper" id="testimonial-card">
+                        <div class="testimonial-card">
+                            <div class="testimonial-cardcontent">
+                                <blockquote class="testimonial-cardquote">
+                                    “This map has become essential for the Brazilian Startups ecosystem”
+                                </blockquote>
+                                <div class="testimonial-cardauthor">
+                                    <img src="./assets/imgs/testimonial-marcos-buson.png" alt="Marcos Buson" class="authorimage" />
+                                    <div class="authorinfo">
+                                        <p class="authorname">João Kepler</p>
+                                        <p class="authorcompany">Bossanova</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="carouselnav-wrapper">
+                    <button class="carouselnav carousel__nav--next">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 5.83301L17.5 13.9997L10.5 22.1663" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </button>
+                </div>
             </div>
-     
-            <button class="carouselnav carousel__nav--next" aria-label="Next testimonial">
-                <span>›</span>
-            </button>
         </div>
+        <div class="section-light"></div>
+        <img class="testimonial-section-bg" src="./assets/imgs/testimonials-section-bg.png" />
      </section>
 
        <!-- Footer -->
@@ -124,5 +144,67 @@
             </div>
         </footer>
    </main>
+
+   <script>
+    // JavaScript for carousel functionality
+    const testimonials = [
+        {
+            quote: "Essential for ecosystem players, both entrepreneurs and investors, to know when and with whom they can count on this arduous journey that is the fundraising process in Brazil",
+            authorName: "Marcos Buson",
+            authorCompany: "HARDS & Moa Capital",
+            authorImage: "./assets/imgs/testimonial-marcos-buson.png"
+        },
+        {
+            quote: "This map has become essential for the Brazilian Startups ecosystem",
+            authorName: "João Kepler",
+            authorCompany: "Bossanova",
+            authorImage: "./assets/imgs/testimonial-joao-kepler.png"
+        },
+        {
+            quote: "The JUPTER map is one of the key resources for founders and startups to navigate our ecosystem and achieve success.",
+            authorName: "Arnobio Morelix",
+            authorCompany: "Sirius Education",
+            authorImage: "./assets/imgs/testimonial-arnobio-morelix.png"
+        }
+    ];
+
+    let currentSlide = 0;
+
+    function updateTestimonial() {
+        const testimonial = testimonials[currentSlide];
+        const quoteElement = document.querySelector('.testimonial-cardquote');
+        const authorNameElement = document.querySelector('.authorname');
+        const authorCompanyElement = document.querySelector('.authorcompany');
+        const authorImageElement = document.querySelector('.authorimage');
+
+        // Update content with a fade effect
+        quoteElement.style.opacity = '0'; // Start fade out
+        setTimeout(() => {
+            quoteElement.textContent = testimonial.quote;
+            authorNameElement.textContent = testimonial.authorName;
+            authorCompanyElement.textContent = testimonial.authorCompany;
+            authorImageElement.src = testimonial.authorImage;
+
+            // Fade in the new content
+            quoteElement.style.opacity = '1'; // Fade in
+        }, 500); // Match this duration with the CSS transition duration
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % testimonials.length; // Move to the next slide
+        updateTestimonial();
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + testimonials.length) % testimonials.length; // Move to the previous slide
+        updateTestimonial();
+    }
+
+    document.querySelector('.carouselnav--prev').addEventListener('click', prevSlide);
+    document.querySelector('.carousel__nav--next').addEventListener('click', nextSlide);
+
+    // Initialize the first testimonial
+    updateTestimonial();
+</script>
 </body>
 </html>
